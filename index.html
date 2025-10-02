@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <!-- navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"> My<span>Portofolio</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#riwayat">Riwayat Sekolah</a>
+        <a href="#contact">Kontak</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- hero section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          I'M MUHAMAD
+          <br />
+          ALGHIFARI
+        </h1>
+        <h2 class="blink">Web Developer</h2>
+        <p>
+          I'm a student at SMK Negeri 1 Majalengka, majoring in Software
+          Engineering. I am passionate about programming and technology.
+        </p>
+        <button onclick="klik()">Hire Me</button>
+        <div class="img">
+          <img src="img/image.png" alt="" />
+        </div>
+      </main>
+    </section>
+    <!-- hero section end-->
+    <!-- Riwayat Sekolah Start -->
+    <section class="riwayat" id="riwayat">
+      <h1>Riwayat Sekolah</h1>
+      <div class="riwayat-slider-custom">
+        <button class="riwayat-prev-custom" type="button" disabled>&#10094;</button>
+        <div class="riwayat-slide-container">
+          <div class="riwayat-slide">
+            <h2>SDN 5 Majalengka Kulon</h2>
+            <img src="img/Foto SD.png" alt="">
+            <p class="tahun">2015 - 2021</p>
+            <div class="caption">
+                Saya menyelesaikan pendidikan dasar di SDN 5 Majalengka Kulon, di mana saya belajar dasar-dasar membaca, menulis, dan berhitung.
+            </div>
+          </div>
+          <div class="riwayat-slide">
+            <h2>SMPN 1 Majalengka</h2>
+            <img src="img/Foto SMP.png" alt="">
+            <p class="tahun">2021 - 2024</p>
+            <div class="caption">
+                Saya melanjutkan pendidikan di SMPN 3 Majalengka, di mana saya mengembangkan keterampilan dalam berbagai mata pelajaran, termasuk matematika, ilmu pengetahuan, dan bahasa.
+            </div>
+          </div>
+          <div class="riwayat-slide">
+            <h2>SMK Negeri 1 Majalengka</h2>
+            <img src="img/Foto SMk.png" alt="">
+            <p class="tahun">2024 - Sekarang</p>
+            <div class="caption">
+                Saat ini, saya sedang belajar di SMK Negeri 1 Majalengka dengan jurusan Rekayasa Perangkat Lunak. Di sini, saya mengasah keterampilan pemrograman dan mendapatkan pengalaman praktis dalam pengembangan perangkat lunak.
+            </div>
+          </div>
+        </div>
+        <button class="riwayat-next-custom" type="button">&#10095;</button>
+      </div>
+    </section>
+    <!-- scroll to top -->
+    <div class="scroll-to-top">
+      <a href="#home"><i data-feather="arrow-up"></i></a>
+    </div>
+    <!-- Riwayat Sekolah End -->
+     <!-- Galeri Start-->
+      <br>
+      <br>
+      <br>
+    <section id="gallery">
+    <div class="container">
+        <h2 style="text-align: center;">Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="img/Cuplikan layar 2025-01-25 142807.png" alt="Gallery Image 1" onclick="openModal(this.src)">
+                <p>Tugas PIPAS</p>
+                <button class="klik"><a href="https://pipas-stemanika-kel-4.vercel.app/">Kunjungi Website</a></button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/ppp.png" alt="Gallery Image 2" onclick="openModal(this.src)">
+                <p>Portofolio menggunakan Tailwind</p>
+                <button class="klik"><a href="https://fortofolioalgi.vercel.app/">Kunjungi Website</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- close img -->
+    <div id="myModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">×</span>
+        <img id="modalImg" class="modal-content">
+        
+    </div>
+</section>
+     <!-- Galeri End -->
+     <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1039.433312424358!2d108.22359978664011!3d-6.832191676887575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1737791495601!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form">
+            <h3>Kirim Pesan Ke saya</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required="">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required="">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required=""></textarea>
+                </div>
+                <button type="submit" onclick="klik1()" ><a href="https://api.whatsapp.com/send/?phone=6289627944050&text&type=phone_number&app_absent=0">Send Message</a></button>
+            </form>
+        </div>
+    </div>
+    </section>
+    <!-- Contact Section end -->
+    <!-- Feather Icons -->
+    <script>
+      // button Click Function
+      function klik1() {
+        // Ambil nilai dari input nama, email, dan pesan
+        const name = document.querySelector('input[placeholder="Your Name"]').value.trim();
+        const email = document.querySelector('input[placeholder="Your Email"]').value.trim();
+        const message = document.querySelector('textarea[placeholder="Your Message"]').value.trim();
+
+        // Jika semua form terisi, tampilkan pesan sukses
+        if (name && email && message) {
+          alert("Pesan Udah Dikirim 😁");
+        } else {
+          // Jika ada yang kosong, tampilkan peringatan
+          alert("Kalo mau kirim pesan, isi semua form dulu ya!");
+        }
+      }
+
+      
+      feather.replace();
+      // Custom slider logic
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".riwayat-slide");
+        const prevBtn = document.querySelector(".riwayat-prev-custom");
+        const nextBtn = document.querySelector(".riwayat-next-custom");
+        let slideIndex = 0;
+
+        function showSlide(idx) {
+          slides.forEach((slide, i) => {
+            slide.style.display = i === idx ? "block" : "none";
+          });
+          prevBtn.disabled = idx === 0;
+          nextBtn.disabled = idx === slides.length - 1;
+        }
+        showSlide(slideIndex);
+
+        nextBtn.onclick = function () {
+          if (slideIndex < slides.length - 1) {
+            slideIndex++;
+            showSlide(slideIndex);
+          }
+        };
+        prevBtn.onclick = function () {
+          if (slideIndex > 0) {
+            slideIndex--;
+            showSlide(slideIndex);
+          }
+        };
+      });
+    </script>
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="footer-container grid-footer">
+        <div class="footer-col about">
+          <h3>About Me</h3>
+          <div class="footer-underline"></div>
+          <p>A passionate web developer focused on creating beautiful and functional websites.</p>
+        </div>
+        <div class="footer-col links">
+          <h3>Quick Links</h3>
+          <div class="footer-underline"></div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#riwayat">Riwayat</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="footer-copyright">
+        © 2025 My Portfolio. All rights reserved.
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
+</html>
